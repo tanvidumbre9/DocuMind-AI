@@ -1,0 +1,126 @@
+
+# ==========================================
+# PYTHON VIRTUAL ENVIRONMENTS
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Isolated OCR environment
+ocr_worker/.venv/
+
+# ==========================================
+# PYTHON CACHE AND COMPILED FILES
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==========================================
+# ENVIRONMENT VARIABLES AND SECRETS
+# ==========================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+
+# ==========================================
+# DATASETS AND DOCUMENT FILES
+# ==========================================
+data/
+datasets/
+uploads/
+temp/
+tmp/
+
+# Ignore raw and processed document collections
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+
+# Exception: allow explicitly documented sample files
+!docs/**/*.pdf
+
+# ==========================================
+# TRAINED MODELS AND CHECKPOINTS
+# ==========================================
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+*.bin
+*.h5
+*.pkl
+*.joblib
+
+models/
+checkpoints/
+weights/
+
+# ==========================================
+# EXPERIMENT TRACKING AND LOGS
+# ==========================================
+mlruns/
+mlartifacts/
+logs/
+*.log
+
+# ==========================================
+# JUPYTER
+# ==========================================
+.ipynb_checkpoints/
+
+# ==========================================
+# FRONTEND DEPENDENCIES
+# ==========================================
+node_modules/
+dist/
+build/
+coverage/
+
+# ==========================================
+# DATABASE FILES
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# IDE AND EDITOR FILES
+# ==========================================
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ==========================================
+# OS FILES
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# TEST AND COVERAGE OUTPUT
+# ==========================================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# DOCKER AND TEMPORARY FILES
+# ==========================================
+*.tar
+*.zip
+*.rar
+*.7z
